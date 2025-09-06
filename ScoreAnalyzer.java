@@ -1,9 +1,8 @@
-// ScoreAnalyzer.java
 import java.util.ArrayList;
 
 public class ScoreAnalyzer {
 
-    private ArrayList<Double> scores;
+    private ArrayList<Double> scores; // List to store student scores
 
     // Constructor
     public ScoreAnalyzer() {
@@ -50,7 +49,7 @@ public class ScoreAnalyzer {
     }
 
     // Print histogram-style score distribution
-    public void printScoreDistribution() {
+    public void printScore() {
         int below60 = 0, sixty69 = 0, seventy79 = 0, eighty89 = 0, ninety100 = 0;
 
         for (double score : scores) {

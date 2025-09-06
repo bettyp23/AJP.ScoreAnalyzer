@@ -1,4 +1,3 @@
-// ScoreAnalyzerApp.java
 import java.util.Scanner;
 
 public class ScoreAnalyzerApp {
@@ -20,7 +19,7 @@ public class ScoreAnalyzerApp {
                 }
             } else {
                 System.out.println("Invalid input. Please enter a number.");
-                scanner.next(); // Clear invalid input
+                scanner.next(); //Clear invalid input
             }
         }
 
@@ -28,7 +27,7 @@ public class ScoreAnalyzerApp {
         System.out.printf("\nAverage Score: %.2f%n", analyzer.calculateAverage());
         System.out.printf("Minimum Score: %.2f%n", analyzer.getMinScore());
         System.out.printf("Maximum Score: %.2f%n", analyzer.getMaxScore());
-        analyzer.printScoreDistribution();
+        analyzer.printScore();
 
         scanner.close();
     }
